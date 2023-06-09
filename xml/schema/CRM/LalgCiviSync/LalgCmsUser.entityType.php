@@ -5,6 +5,6 @@ return [
   [
     'name' => 'LalgCmsUser',
     'class' => 'CRM_LalgCiviSync_DAO_LalgCmsUser',
-    'table' => 'civicrm_lalg_cms_user',
+    'table' => 'lalg_cms_user',
   ],
 ];

@@ -3,8 +3,8 @@
 <table>
   <base>CRM/LalgCiviSync</base>
   <class>LalgCmsUser</class>
-  <name>civicrm_lalg_cms_user</name>
-  <comment>FIXME</comment>
+  <name>lalg_cms_user</name>
+  <comment>Mirror of various Drupal User fields</comment>
   <log>true</log>
 
   <field>
@@ -30,7 +30,55 @@
     <name>contact_id</name>
     <table>civicrm_contact</table>
     <key>id</key>
-    <onDelete>CASCADE</onDelete>
+    <!-- <onDelete>CASCADE</onDelete> -->
   </foreignKey>
-
+  
+  <field>
+    <name>user_id</name>
+	<type>int unsigned</type>
+    <comment>Id of Drupal User</comment>
+  </field>	
+  
+  <field>
+    <name>username</name>
+	<type>varchar(60)</type>
+    <comment>Login username</comment>
+  </field>	
+  
+  <field>
+    <name>email</name>
+	<type>varchar(254)</type>
+    <comment>Email Address</comment>
+  </field>	  
+  
+  <field>
+    <name>last_login</name>
+	<type>timestamp</type>
+    <comment>Last User Login</comment>
+  </field>	
+  
+  <field>
+    <name>last_access</name>
+	<type>timestamp</type>
+    <comment>Last User Access</comment>
+  </field>
+  
+  <field>
+    <name>group_id</name>
+	<type>int unsigned</type>
+    <comment>Id of Drupal Group</comment>
+  </field>  
+  
+  <field>
+    <name>group_name</name>
+	<type>varchar(254)</type>
+    <comment>Drupal Group Name</comment>
+  </field>	  
+  
+  <field>
+    <name>group_role</name>
+	<type>varchar(60)</type>
+    <comment>Drupal Group Role</comment>
+  </field>	    
+  
 </table>
