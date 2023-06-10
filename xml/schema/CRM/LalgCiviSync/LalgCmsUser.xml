@@ -77,7 +77,7 @@
   
   <field>
     <name>group_role</name>
-	<type>varchar(60)</type>
+	<type>varchar(254)</type>
     <comment>Drupal Group Role</comment>
   </field>	    
   

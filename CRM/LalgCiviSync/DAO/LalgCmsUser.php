@@ -278,7 +278,7 @@ class CRM_LalgCiviSync_DAO_LalgCmsUser extends CRM_Core_DAO {
         ],
         'group_role' => [
           'name' => 'group_role',
-          'type' => CRM_Utils_Type::T_VARCHAR(60),
+          'type' => CRM_Utils_Type::T_VARCHAR(254),
           'title' => E::ts('Group Role'),
           'description' => E::ts('Drupal Group Role'),
           'where' => 'lalg_cms_user.group_role',
