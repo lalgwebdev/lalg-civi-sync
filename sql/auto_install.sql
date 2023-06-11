@@ -36,6 +36,7 @@ SET FOREIGN_KEY_CHECKS=1;
 CREATE TABLE `lalg_cms_user` (
   `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Unique LalgCmsUser ID',
   `contact_id` int unsigned COMMENT 'FK to Contact',
+  `display_name` varchar(128) COMMENT 'Contact Display Name', 
   `user_id` int unsigned COMMENT 'Id of Drupal User',
   `username` varchar(60) COMMENT 'Login username',
   `email` varchar(254) COMMENT 'Email Address',

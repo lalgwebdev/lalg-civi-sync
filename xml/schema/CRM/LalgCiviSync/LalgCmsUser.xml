@@ -34,6 +34,12 @@
   </foreignKey>
   
   <field>
+    <name>display_name</name>
+	<type>varchar(128)</type>
+    <comment>Contact Display Name</comment>
+   </field>
+  
+  <field>
     <name>user_id</name>
 	<type>int unsigned</type>
     <comment>Id of Drupal User</comment>
