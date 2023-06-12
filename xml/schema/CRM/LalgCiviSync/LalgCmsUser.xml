@@ -30,12 +30,12 @@
     <name>contact_id</name>
     <table>civicrm_contact</table>
     <key>id</key>
-    <!-- <onDelete>CASCADE</onDelete> -->
+    <onDelete>CASCADE</onDelete>
   </foreignKey>
   
   <field>
     <name>display_name</name>
-	<type>varchar(128)</type>
+	<type>text</type>
     <comment>Contact Display Name</comment>
    </field>
   
@@ -47,13 +47,13 @@
   
   <field>
     <name>username</name>
-	<type>varchar(60)</type>
+	<type>text</type>
     <comment>Login username</comment>
   </field>	
   
   <field>
     <name>email</name>
-	<type>varchar(254)</type>
+	<type>text</type>
     <comment>Email Address</comment>
   </field>	  
   
@@ -77,13 +77,13 @@
   
   <field>
     <name>group_name</name>
-	<type>varchar(254)</type>
+	<type>text</type>
     <comment>Drupal Group Name</comment>
   </field>	  
   
   <field>
     <name>group_role</name>
-	<type>varchar(254)</type>
+	<type>text</type>
     <comment>Drupal Group Role</comment>
   </field>	    
   
