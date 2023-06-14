@@ -46,6 +46,6 @@ CREATE TABLE `lalg_cms_user` (
   `group_name` text COMMENT 'Drupal Group Name',
   `group_role` text COMMENT 'Drupal Group Role',
   PRIMARY KEY (`id`),
-  CONSTRAINT FK_lalg_cms_user_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE CASCADE
+  CONSTRAINT FK_lalg_cms_user_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE SET NULL
 )
 ENGINE=InnoDB;
