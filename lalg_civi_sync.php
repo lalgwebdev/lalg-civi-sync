@@ -166,3 +166,21 @@ function lalg_civi_sync_civicrm_themes(&$themes) {
 //  ]);
 //  _lalg_civi_sync_civix_navigationMenu($menu);
 //}
+
+/************************************************************/
+/*     LALG Functions added manually                        */
+/************************************************************/
+
+/**
+ * Implements hook_civicrm_coreResourceList().
+ *    (hook_civirm_buildForm() does not seem to work on this page.)
+ */
+function lalg_civi_sync_civicrm_coreResourceList(&$items, $region) {
+//  if ($region === 'html-header') {
+//    Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js', 0, $region);
+  if (strpos($_SERVER['REQUEST_URI'], "civicrm/refreshCmsUsers" ) !== false) {
+	Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js');
+  }
+}
+
+
