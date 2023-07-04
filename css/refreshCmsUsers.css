@@ -1,0 +1,8 @@
+/* Style the Refresh button (etc?) */
+
+#btnRefreshCmsUsers {
+	background-color: dimgrey;
+    color: white !important;
+    border-radius: 8px;
+    padding: 5px 10px;
+}

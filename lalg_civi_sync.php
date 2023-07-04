@@ -180,6 +180,7 @@ function lalg_civi_sync_civicrm_coreResourceList(&$items, $region) {
 //    Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js', 0, $region);
   if (strpos($_SERVER['REQUEST_URI'], "civicrm/refreshCmsUsers" ) !== false) {
 	Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js');
+	Civi::resources()->addStyleFile(E::LONG_NAME, 'css/refreshCmsUsers.css');
   }
 }
 
