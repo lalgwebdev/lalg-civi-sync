@@ -178,7 +178,7 @@ function lalg_civi_sync_civicrm_themes(&$themes) {
 function lalg_civi_sync_civicrm_coreResourceList(&$items, $region) {
 //  if ($region === 'html-header') {
 //    Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js', 0, $region);
-  if (strpos($_SERVER['REQUEST_URI'], "civicrm/refreshCmsUsers" ) !== false) {
+  if (strpos($_SERVER['REQUEST_URI'], "lalgwf=4" ) !== false) {
 	Civi::resources()->addScriptFile(E::LONG_NAME, 'js/refreshCmsUsers.js');
 	Civi::resources()->addStyleFile(E::LONG_NAME, 'css/refreshCmsUsers.css');
   }
